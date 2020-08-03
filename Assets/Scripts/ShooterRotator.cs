@@ -16,6 +16,7 @@ public class ShooterRotator : MonoBehaviour
     public float verticalRotateSpeed = 360f;
     public float horizontalRotateSpeed = 360f;
 
+    public BallShooter ballShooter;
 
     private void Update()
     {
@@ -47,6 +48,7 @@ public class ShooterRotator : MonoBehaviour
                 else if (Input.GetButtonUp("Fire1"))
                 {
                     state = RotateState.Ready;
+                    ballShooter.enabled = true;
                 }
                 break;
 
@@ -56,6 +58,13 @@ public class ShooterRotator : MonoBehaviour
 
     }
 
+
+    private void OnEnable()
+    {
+        transform.rotation = Quaternion.identity;
+        state = RotateState.Idle;
+        ballShooter.enabled = false;
+    }
 
 
 

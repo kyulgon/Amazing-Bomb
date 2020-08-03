@@ -128,6 +128,9 @@ MonoBehaviour:
   explosionForce: 1000
   lifeTime: 10
   explosionRadius: 20
+  whatIsProp:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!1001 &3985279635390696246
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -144,6 +147,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3846078411238677537, guid: 4cbc16e0331b8024898f864afa68b3ff,
+        type: 3}
+      propertyPath: playOnAwake
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7431806949177028062, guid: 4cbc16e0331b8024898f864afa68b3ff,
         type: 3}
@@ -200,17 +208,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3846078411238677537, guid: 4cbc16e0331b8024898f864afa68b3ff,
-        type: 3}
-      propertyPath: playOnAwake
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5344728233860948772, guid: 4cbc16e0331b8024898f864afa68b3ff,
-        type: 3}
-      propertyPath: playOnAwake
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3754886359768508103, guid: 4cbc16e0331b8024898f864afa68b3ff,
+        type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3531074236729413132, guid: 4cbc16e0331b8024898f864afa68b3ff,
         type: 3}
       propertyPath: playOnAwake
       value: 0
@@ -220,7 +223,7 @@ PrefabInstance:
       propertyPath: playOnAwake
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3531074236729413132, guid: 4cbc16e0331b8024898f864afa68b3ff,
+    - target: {fileID: 5344728233860948772, guid: 4cbc16e0331b8024898f864afa68b3ff,
         type: 3}
       propertyPath: playOnAwake
       value: 0
