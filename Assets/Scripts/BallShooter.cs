@@ -21,6 +21,8 @@ public class BallShooter : MonoBehaviour
     private float chargeSpeed;
     private bool fired;
 
+    public CamFollow cam;
+
     private void OnEnable() // 매번 활성화하기 위해서 씀
     {
         currentForce = minForce;
@@ -80,6 +82,8 @@ public class BallShooter : MonoBehaviour
         shootingAudio.Play();
 
         currentForce = minForce;
+
+        cam.SetTarget(ballInstance.transform, CamFollow.State.Tracking);
     }
 
 }
